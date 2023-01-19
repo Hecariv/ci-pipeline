@@ -7,9 +7,9 @@ def call() {
 
     setupPython{
         String server = "Test"
-        List files = getChangeFiles()
-        for (int k = 0; k < files.size(); k++) {
-            def file = files[k]
+     //   List files = getChangeFiles()
+       // for (int k = 0; k < files.size(); k++) {
+         //   def file = files[k]
             withEnv(
                     [
                             'Build_Repository_Name=cb-templates-tmpl',
