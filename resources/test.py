@@ -1,3 +1,10 @@
+import git
+import logging
+
+
+logger = logging.getLogger(__name__)
+logger.setLevel("DEBUG")
+
 def get_main_branch():
     repo = git.Repo(search_parent_directories=True)
     remote_refs = repo.remote().refs
@@ -13,5 +20,9 @@ def get_main_branch():
     return main_branch
 
 
+def main():
+    get_main_branch()
 
-get_main_branch()
+
+if __name__ == "__main__":
+    main()
