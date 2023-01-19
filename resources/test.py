@@ -1,7 +1,7 @@
 def get_main_branch():
     repo = git.Repo(search_parent_directories=True)
     remote_refs = repo.remote().refs
-
+    logger.info("HELLOOOOOOOOOOOOOOOOOOOOOO")
     for refs in remote_refs:
         logger.info(refs.name)
     heads = repo.heads
