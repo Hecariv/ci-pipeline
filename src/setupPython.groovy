@@ -14,7 +14,7 @@ def call (Closure body){
             python3 -m pip install --index-url "https://devstack.vwgroup.com/artifactory/api/pypi/pypi/simple"  --upgrade pip
             python3 -m pip install --index-url "https://devstack.vwgroup.com/artifactory/api/pypi/pypi/simple"  --upgrade wheel
             python3 -m pip install --index-url "https://devstack.vwgroup.com/artifactory/api/pypi/pypi/simple"  --upgrade setuptools_scm
-   python3 -m pip install --index-url "https://devstack.vwgroup.com/artifactory/api/pypi/pypi/simple" -r requirements.txt
+            python3 -m pip install --index-url "https://devstack.vwgroup.com/artifactory/api/pypi/pypi/simple" -r requirements.txt
         """)
 
         // Run the passed body with ~/.netrc available.

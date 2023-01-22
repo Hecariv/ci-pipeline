@@ -1,3 +1,11 @@
+--extra-index-url https://devstack.vwgroup.com/artifactory/api/pypi/codebeamer-alm-pypi/simple
+setuptools_scm
+wheel
+calmpy
 GitPython
+loguru
+PyYaml
+
 pytest
 requests
+alm8utils~=1.1.0
