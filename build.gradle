@@ -9,6 +9,16 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src']
+        }
+    }
+
+}
+
+
 dependencies {
     implementation 'org.apache.groovy:groovy:4.0.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -17,6 +27,13 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.hudson.plugins/git
     implementation 'org.eclipse.hudson.plugins:git:3.0.1'
 
+    implementation group: 'org.jenkins-ci.plugins', name: 'credentials', version: '2.1.13', ext: 'jar'
+    implementation group: 'org.jenkins-ci.plugins', name: 'matrix-auth', version: '1.6', ext: 'jar'
+    implementation group: 'org.jenkins-ci.plugins.workflow', name: 'workflow-cps', version: '2.39', ext: 'jar'
+    implementation group: 'org.jenkins-ci.plugins', name: 'git', version: '4.14.3', ext: 'jar'
+    implementation 'com.cloudbees:groovy-cps:1.22'
+
+    implementation 'org.codehaus.groovy:groovy-all:2.4.12'
 }
 
 test {
