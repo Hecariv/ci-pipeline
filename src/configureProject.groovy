@@ -19,6 +19,7 @@ def call() {
                 ]
         ){
             sh """
+                    echo 'TEST'
                     python3 cb_apply_horizontal_deployment.py --directory . 
                 """
         }
